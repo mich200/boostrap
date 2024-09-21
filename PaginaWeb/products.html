@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Products</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="wireframes/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="wireframes/bootstrap/css/bootstrap.min.css">
+
+    <!--fuente-->
+
+    <!--link css-->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+
+
+        <nav class="navbar custom-bg">
+            <div class="container-fluid">
+                <img src="wireframes/mejorado.png" alt="skincare time" width="90" height="90">
+                <div class="text-center flex-grow-1">
+                    <span>Revive Skincare Clinic</span>
+                    </a>
+                </div>
+        </nav>
+        <!--Barra de navegacion-->
+        <nav class="navbar navbar-expand-lg transparent-bg py-3">
+            <div class="container">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <!--enlaces-->
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <div class="separator"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <div class="separator"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Company.html">Company</a>
+                    </li>
+                    <div class="separator"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+
+        <div class="container px-4 text-center">
+            <div class="row gx-5">
+                <div class="container"> <!--INFORMACION DE VISUALIZACION-->
+                    <p class="text-center mt-5">
+                        ¡Descubre la magia del cuidado de la piel en Revive Skincare Clinic! Nuestro espacio está
+                        dedicado a ofrecerte productos exclusivos que realzan tu belleza natural, desde tratamientos
+                        faciales y cremas especializadas hasta herramientas innovadoras para el autocuidado. Ya seas un
+                        amante del skincare experimentado o estés dando tus primeros pasos en el cuidado facial, tenemos
+                        opciones perfectas para todos. ¡No te pierdas la oportunidad de transformar tu rutina de belleza
+                        y llevarte a casa lo mejor para tu piel! Visítanos y vive la experiencia Revive como nunca
+                        antes. ¡Haz tu cita hoy mismo!
+
+                    </p>
+                </div>
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                    <a class="navbar-brand">Descucbre nuevos productos para tu piel</a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    </div>
+                </nav>
+
+    <div class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4 pb-3">
+                <div class="card" onclick="showDetails(1)">
+                    <img src="wireframes/ReVive Skincare Luxury Skincare & Skin Renewal.webp" class="card-img-top" alt="Imagen 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-start">antiojeras de hombre para decir adios al cansancio con su crema hidratante</h5>
+                        <p class="card-text">$77.90</p>
+                        <button class="btn btn-danger">Ver mas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-3">
+                <div class="card" onclick="showDetails(2)">
+                    <img src="wireframes/ReVive Skincare Luxury Skincare & Skin Renewall.webp" class="card-img-top" alt="Imagen 2">
+                    <div class="card-body">
+                        <h5 class="card-title text-start">Revive Peau Magnifique Serum 30 ml</h5>
+                        <p class="card-text">$55.90</p>
+                        <button class="btn btn-danger">Ver mas </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-3">
+                <div class="card" onclick="showDetails(3)">
+                    <img src="wireframes/ReVive Skincare Luxury Skincare & Skin Renewalllll.webp" class="card-img-top" alt="Imagen 3">
+                    <div class="card-body">
+                        <h5 class="card-title text-start">Revive, crema hidratante Renovacion Dia Amplio ESPECTRO spf 30 protector solar</h5>
+                        <p class="card-text">$195.00</p>
+                        <button class="btn btn-danger">Ver mas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Detalles de los productos -->
+        <div id="details-box" class="details-box d-flex  pe-3">
+            <img id="details-img" src="" alt="Imagen detallada" class="img-fluid mb-3">
+            <div class="container text-center contiene">
+                <h5 id="details-title"></h5>
+                <p id="details-description"></p>
+                <p id="details-price"></p>
+                <button id="details-button" class="btn btn-danger">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const products = {
+            1: {
+                img: 'wireframes/ReVive Skincare Luxury Skincare & Skin Renewal.webp',
+                title: 'The Ordinary Retinol 1.0% in Squalane -Guayana Trendy',
+                description: 'Descripción del Producto 1.',
+                price: '$17.00',
+            },
+            2: {
+                img: 'wireframes/ReVive Skincare Luxury Skincare & Skin Renewall.webp',
+                title: 'LANEIGE LIP SLEEPING MASK BERRY 20g',
+                description: 'Descripción del Producto 2.',
+                price: '$55.00',
+            },
+            3: {
+                img: 'wireframes/ReVive Skincare Luxury Skincare & Skin Renewalllll.webp',
+                title: 'Tribe Skincare - Beauty Bar by Chloe',
+                description: 'Descripción del Producto 3.',
+                price: '$25.00',
+            },
+        };
+    
+        function showDetails(productId) {
+            const product = products[productId];
+            document.getElementById('details-img').src = product.img;
+            document.getElementById('details-title').innerText = product.title;
+            document.getElementById('details-description').innerText = product.description;
+            document.getElementById('details-price').innerText = product.price;
+            document.getElementById('details-box').style.display = 'flex'; 
+        }
+    </script>
+
+<footer>
+    <div class="row g-0 text-center custom-row  bg-secondary mt-5">      
+        <div class="col-6 col-md-3 pt-5">
+            <p>+50M facebook <br> <br> +22M Instagram <br>
+        </div>
+        <div class="col-6 col-md-3 d-flex flex-column align-items-center pt-5 ">
+            <a target="_blank" class="link-net" href="https://www.facebook.com/reviveskincare/?locale=es_LA">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+
+            <a target="_blank" class="link-net"  href="https://www.instagram.com/reviveskincare/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M16.5 7.5l0 .01" />
+            </svg>
+            </a>
+
+        </div>
+        <div class="col-6 col-md-3  bg-secondary pt-5">
+            <form class="d-flex mt-5 ms-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="col-6 col-md-3 bg-secondary pt-5">
+            <p class="ms-5 me-5">© 2024 Copyright reviveskincare</p>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="wireframes/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
